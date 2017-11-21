@@ -61,7 +61,7 @@ function calculateSmallestAngle(timeOfDay)
 // format the floating number
 function zPad(n, l, r)
 {
-  return(a=String(n).match(/(^-?)(\d*)\.?(\d*)/))?a[1]+(Array(l).join(0)+a[2]).slice(-Math.max(l,a[2].length))+('undefined'!==typeof r?(0<r?'.':'')+(a[3]+Array(r+1).join(0)).slice(0,r):a[3]?'.'+a[3]:''):0
+	return(a=String(n).match(/(^-?)(\d*)\.?(\d*)/))?a[1]+(Array(l).join(0)+a[2]).slice(-Math.max(l,a[2].length))+('undefined'!==typeof r?(0<r?'.':'')+(a[3]+Array(r+1).join(0)).slice(0,r):a[3]?'.'+a[3]:''):0
 }
 
 var result = calculateSmallestAngle("12:00:55");
